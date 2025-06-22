@@ -1,0 +1,111 @@
+/* Estilos para páginas de conteúdo */
+.page-content {
+    padding: 120px 0 80px; /* Espaço extra no topo para o cabeçalho fixo */
+    background-color: var(--light-bg);
+}
+
+.page-title {
+    font-family: var(--heading-font);
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.page-content .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.page-content .text-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.page-content .image-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.page-content .image-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+.page-content h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+}
+
+.page-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Botão de voltar */
+.page-content .btn {
+    margin-top: 20px;
+}
+
+/* Caixas de informação */
+.info-box, .cta-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h3, .cta-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: var(--heading-font);
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box ul li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.cta-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--accent-color);
+}
+
+.cta-box p {
+    margin-bottom: 15px;
+}
+
+.cta-box .btn {
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .page-content .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .info-box, .cta-box {
+        padding: 15px;
+    }
+}

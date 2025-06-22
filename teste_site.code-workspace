@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../site_dee_ufpe_modificado"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "teste_site"
+	}
+}
